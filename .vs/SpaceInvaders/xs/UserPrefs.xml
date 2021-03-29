@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{435C8792-8CED-684F-1777-1C6A741F16E3}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SpawnInvaders.cs">
+    <Files>
+      <File FileName="Assets/Scripts/SpawnInvaders.cs" Line="68" Column="15" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SpaceInvaders" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="SpawnInvaders.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="980610ee-db0a-4965-b83c-8603b7b4114e" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
