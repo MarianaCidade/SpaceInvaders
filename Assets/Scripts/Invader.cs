@@ -12,8 +12,14 @@ public class Invader : MonoBehaviour
 
     float tempoQuePassou = 0f;
 
+    float hitsNeeded = 10;
+
+    float hitsTaken = 0;
+
+
     void Update()
     {
+        //Mandar o fogo dos aliens 
         if(tag == "Destrutivel")
         {
             tempoQuePassou += Time.deltaTime;
@@ -26,6 +32,7 @@ public class Invader : MonoBehaviour
         
     }
 
+    //Quando ha uma colisao com os aliens
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (tag == "Destrutivel")
@@ -35,9 +42,21 @@ public class Invader : MonoBehaviour
                 Destroy(gameObject); //Destruir-me
                 Destroy(collision.gameObject); //Destruir o objeto que comigo colidiu
             }
-        } else
+        }
+
+        if (tag == "Indestrutivel")
         {
-            Destroy(collision.gameObject);
+            if(collision.gameObject.tag == "DisparoDaNave")
+            {
+                hitsTaken += 1f;
+
+                if (hitsTaken >= hitsNeeded)
+                {
+                    Destroy(gameObject);
+                    Destroy(collision.gameObject);
+                }
+            }
+            
         }
     }
     

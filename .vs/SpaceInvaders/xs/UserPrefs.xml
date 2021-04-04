@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{435C8792-8CED-684F-1777-1C6A741F16E3}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Invader.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Ship.cs">
     <Files>
       <File FileName="Assets/Scripts/SpawnInvaders.cs" Line="59" Column="74" />
       <File FileName="Assets/Scripts/Fire.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Ship.cs" Line="60" Column="39" />
+      <File FileName="Assets/Scripts/Ship.cs" Line="70" Column="47" />
       <File FileName="Assets/Scripts/Destroyer.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Invader.cs" Line="13" Column="30" />
+      <File FileName="Assets/Scripts/Invader.cs" Line="59" Column="13" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,20 +13,17 @@
           <Node name="SpaceInvaders" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Invader.cs" selected="True" />
+                <Node name="Ship.cs" selected="True" />
               </Node>
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5ffecb20-8837-4fbd-ac06-cebf5cff8b09" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0aad8590-23e2-41de-bb86-2dfe3ea98e89" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

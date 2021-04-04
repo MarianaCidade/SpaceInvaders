@@ -13,6 +13,10 @@ public class Ship : MonoBehaviour
     [SerializeField]
     float velocidade = 5f;
 
+    float nrVezesAtingida = 0f;
+
+    float nrVidas = 3f;
+
     
 
     Vector3 bottomLeftWorld, topRightWorld;
@@ -56,7 +60,17 @@ public class Ship : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(gameObject);
-        Destroy(collision.gameObject);
+        if (collision.gameObject)
+        {
+            nrVezesAtingida += 1;
+            if(nrVezesAtingida >= nrVidas)
+            {
+             
+                Destroy(gameObject);
+                Destroy(collision.gameObject);
+            }
+                
+        }
+
     }
 }
