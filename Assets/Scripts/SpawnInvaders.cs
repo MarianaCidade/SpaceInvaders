@@ -29,6 +29,10 @@ public class SpawnInvaders : MonoBehaviour
     [SerializeField]
     float probabilidadeDeIndestrutivel = 0.15f;
 
+    float speed = 0.5f;
+
+    float direction = 1f;
+
 
     void Awake()
     {
@@ -66,10 +70,23 @@ public class SpawnInvaders : MonoBehaviour
         }
 
     }
-        
+
+    private void Update()
+    {
+        transform.position += Time.deltaTime * speed * Vector3.right * direction;
+
+        if (transform.position.x >= 0.5)
+        {
+            direction *= -1f;
+
+        }
+        if (transform.position.x <= -0.5)
+        {
+            direction *= -1f;
+        }
+    }
 
 
 
 
-     
 }

@@ -60,14 +60,16 @@ public class Ship : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject)
+        if (collision.gameObject.tag == "DisparoDoInvasor")
         {
             nrVezesAtingida += 1;
-            if(nrVezesAtingida >= nrVidas)
+            Destroy(collision.gameObject);
+
+            if (nrVezesAtingida >= nrVidas)
             {
              
                 Destroy(gameObject);
-                Destroy(collision.gameObject);
+                
             }
                 
         }
