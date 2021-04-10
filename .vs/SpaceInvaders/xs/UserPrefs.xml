@@ -1,11 +1,13 @@
 ﻿<Properties StartupConfiguration="{435C8792-8CED-684F-1777-1C6A741F16E3}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Invader.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LoadGameScene.cs">
     <Files>
-      <File FileName="Assets/Scripts/SpawnInvaders.cs" Line="85" Column="30" />
-      <File FileName="Assets/Scripts/Fire.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Ship.cs" Line="59" Column="6" />
+      <File FileName="Assets/Scripts/SpawnInvaders.cs" Line="93" Column="1" />
+      <File FileName="Assets/Scripts/Fire.cs" />
+      <File FileName="Assets/Scripts/Ship.cs" Line="76" Column="52" />
       <File FileName="Assets/Scripts/Destroyer.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Invader.cs" Line="13" Column="23" />
+      <File FileName="Assets/Scripts/Invader.cs" Line="43" Column="37" />
+      <File FileName="Assets/Scripts/MoveInvaders.cs" Line="36" Column="63" />
+      <File FileName="Assets/Scripts/LoadGameScene.cs" Line="12" Column="4" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,7 +15,7 @@
           <Node name="SpaceInvaders" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Invader.cs" selected="True" />
+                <Node name="LoadGameScene.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -23,7 +25,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0aad8590-23e2-41de-bb86-2dfe3ea98e89" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4c7b7cb6-1eaa-479f-99da-0384351c7980" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

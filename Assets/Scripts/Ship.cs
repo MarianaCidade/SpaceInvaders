@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Ship : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class Ship : MonoBehaviour
     float nrVezesAtingida = 0f;
 
     float nrVidas = 3f;
+
+    [SerializeField]
+    Vector3 initialPosition;
 
     
 
@@ -69,9 +73,10 @@ public class Ship : MonoBehaviour
             {
              
                 Destroy(gameObject);
-                
+                SceneManager.LoadScene("GameOver");
             }
-                
+            
+            
         }
 
     }

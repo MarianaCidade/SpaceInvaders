@@ -7,31 +7,40 @@ public class Invader : MonoBehaviour
     [SerializeField]
     GameObject fire = null;
 
+    [SerializeField]
+    float cadencia = 1.5f;
 
-    float cadencia;
-
-    float minDelay = 3f;
-
-    float maxDelay = 6f;
+    [SerializeField]
+    float intervaloDeCadencia = 1f;
 
     float tempoQuePassou = 0f;
+    float tempoDeDisparo = 0f;
 
     float hitsNeeded = 10;
 
     float hitsTaken = 0;
 
+    private void Start()
+    {
+        NovoTempoDeDisparo();
+    }
+
+    void NovoTempoDeDisparo()
+    {
+        tempoDeDisparo = Random.Range(cadencia - intervaloDeCadencia, cadencia + intervaloDeCadencia);
+    }
 
     void Update()
     {
         //Mandar o fogo dos aliens 
         if(tag == "Destrutivel")
         {
-            cadencia = Random.Range(minDelay , maxDelay);
             tempoQuePassou += Time.deltaTime;
-            if (tempoQuePassou >= cadencia)
+            if (tempoQuePassou >= tempoDeDisparo)
             {
                 Instantiate(fire, transform.position, transform.rotation);
                 tempoQuePassou = 0f;
+                NovoTempoDeDisparo();
             }
         }
         
